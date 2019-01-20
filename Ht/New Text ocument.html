@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script src="in.js"></script>
+<script src="dob.js"></script>
+<style>
+body
+{
+
+  /* The image used */
+  background-image: url("san.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  position: relative;
+  width: 100%;
+  Right: 50px;
+  text-align: right;
+}
+</style>
+
+<div class="main">
+<label align="center">Patient First Name :</label>
+<input type="text"><br><br>
+<label >Patient Last Name :</label>
+<input type="text"><br><br>
+<label >Address :</label>
+<select style="margin-right:185px"></select><br><br>
+<label >City :</label>
+<select style="margin-right:210px"></select><br><br>
+<label ">State :</label>
+<select style="margin-right:205px"></select><br><br>
+<label style="margin-right:2px">Pincode :</label>
+<input type="text" style="margin-right:65px"><br><br>
+Date Of Birth: <input type="date" name="date of birth" id="date" />
+<button type="button" onClick="_setAge();" />check</button><br><br>
+<label style="margin-right:25px"  >Sex :</label>
+<input type="radio" style="margin-right:10px"> Male
+<input type="radio" style="margin-right:10px" > Female
+<input type="radio"style="margin-right:10px" >Other<br><br>
+<label style="margin-right:30px" >Maritial Status :</label>
+<input type="radio">Single
+<input type="radio">Married<br><br>
+<label style="margin-right:20px" >Email Address :</label>
+<input type="email"><br><br>
+<label> Contact Number :</label>
+<input type="tel" style="margin-right:6px" ><br><br>
+<div class="Ins">
+<label style="margin-right:30px">Insurence Available</label>
+<input type="radio" name="usertype" id="Utype">Yes<br>
+<input type="radio">No<br>
+<button type="button" style="margin-Right:40px" onclick=myFun()>Register</button>
+<script>
+function myFun()
+{
+alert("Register Successfully");
+}
+</script>
+</div>
+</div clear>
+</body>
+</html>
+
